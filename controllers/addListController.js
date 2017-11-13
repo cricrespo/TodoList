@@ -7,11 +7,11 @@ function addList(){
 
     var self = this;
     self.add = "";
-    self.title = "";
+    self.title = "adasdsa";
     self.todo = "";
 
 
-    function update(){
+    self.update = function(){
 
         var newTodo = {
 
@@ -28,5 +28,6 @@ function addList(){
         
 
 }
+
 
 

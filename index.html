@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Todo</title>
+  </head>
+  <body>
+
+    <!-- Firebase -->
+
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDP8tWyn90SnaCVKW0GxhZdIs02fj1NDhA",
+        authDomain: "todolist-cede0.firebaseapp.com",
+        databaseURL: "https://todolist-cede0.firebaseio.com",
+        projectId: "todolist-cede0",
+        storageBucket: "",
+        messagingSenderId: "308686534131"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <!-- Angular ---->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0/angular-ui-router.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>    
+
+
+    <!-- App -->
+    <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
+
+
+    <!-- Controllers -->
+    <script src="controllers/billboardController.js"></script>
+    <script src="controllers/addListController.js"></script>
+
+
+    <!-- Services -->
+    <script src="services/billboardService.js"></script>
+    <script src="services/todoService.js"></script>
+
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Julius+Sans+One" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+
+
+
+    <div ui-view="topbar"></div>
+    <div ui-view="content"></div>
+    <div ui-view="footer"></div>
+
+
+
+  </body>
+</html>

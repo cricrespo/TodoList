@@ -1,28 +1,32 @@
 
 angular.module('app').service('todoService', ['$http', '$firebaseArray', '$firebaseObject', todoService]);
 
-function todoService(){
+function todoService($http, $firebaseArray, $firebaseObject){
 
     console.log('List Todo');
 
-    var list =  {
-        list: {},
+    var todo =  {
+        list: [],
         objectList: {},
         get: get,
         add: add,
-        clear: clear,
+        clear: clear
     };
 
     init();
 
-    return list;
+    return todo;
 
     function init() {
-		var ref = firebase.database().ref('TodoList/Todo');
-		product.list = $firebaseArray(ref);
-		product.objectList = $firebaseObject(ref);
+		var ref = firebase.database().ref('todolist-cede0');
+		todo.list = $firebaseArray(ref);
+		todo.objectList = $firebaseObject(ref);
 		console.log('list');
-	}
+    }
+    
+    function add(todObject){
+        todo.list.$add(todObject);
+    }
 
 
 }

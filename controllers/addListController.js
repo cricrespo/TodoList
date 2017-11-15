@@ -1,14 +1,18 @@
 //Controller
 
-angular.module('app').controller('addListController', [addList]);
+angular.module('app').controller('addListController',['todoService', addList]);
 
+console.log('controller');
 
     function addList(todoService){
 
         var self = this;
+        
         self.add = "";
         self.title = "";
         self.todo = "";
+        self.calendar = "";
+        self.time =  "";
         self.update = update;
 
 
@@ -16,13 +20,16 @@ angular.module('app').controller('addListController', [addList]);
 
         var newTodo = {
             "title" : self.title,
-            'todo' : self.todo
+            'todo' : self.todo,
+            'calendar' :  Date(self.calendar),
+            'time' : Date(self.time | "HH:mm:ss" )
         };
     
         todoService.add(newTodo);
         console.log(todoService.list);
     }
 }
+
 
 
 

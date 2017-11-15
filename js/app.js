@@ -1,4 +1,4 @@
-angular.module('app', ['ui.router']).config(function($stateProvider, $urlRouterProvider) {
+angular.module('app', ['ui.router', 'firebase']).config(function($stateProvider, $urlRouterProvider) {
     
         $urlRouterProvider.otherwise('/');
     

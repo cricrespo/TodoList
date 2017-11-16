@@ -1,0 +1,14 @@
+
+        <div class="col s6 center-align" ng-controller="showTodoController as show" class="list"> 
+
+             <div  ng-repar="list in show.list.list track by $index">    
+                    
+                <div class="collection">
+                    <a href="#!" class="collection-item">{{list.title}}</a>
+                    <a href="#!" class="collection-item">{{list.todo}}</a>
+                    <a href="#!" class="collection-item">{{list.calendar | date}}</a>
+                    <a href="#!" class="collection-item">{{list.time }}</a>
+                </div>
+                                
+            </div> 
+        </div>

@@ -12,22 +12,14 @@ angular.module('app', ['ui.router', 'firebase']).config(function($stateProvider,
                 "footer": {   templateUrl: 'views/footer.html' },
               }
           })
-          .state('billboard', {
-              url: '/billboard',
+          .state('todoview', {
+              url: '/todoview',
               parent:'home',
               views:
               {
-                "content@": {   templateUrl: 'views/billboard.html' },
-    
+                "content@": {   templateUrl: 'views/todoview.html' },
               }
-          })
-        //   .state('map', {
-        //       url: '/map',
-        //       parent:'home',
-        //       views:
-        //       {
-        //         "content@": {   templateUrl: 'views/map.html' },
-        //       }
-              // });
+          });
+
     
 });

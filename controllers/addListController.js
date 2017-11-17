@@ -21,7 +21,7 @@ console.log('controller');
         var newTodo = {
             "title" : self.title,
             'todo' : self.todo,
-            'calendar' :  Date(self.calendar),
+            'calendar' :  Date(self.calendar | 'medium'),
             'time' : Date(self.time | "HH:mm:ss" )
         };
     

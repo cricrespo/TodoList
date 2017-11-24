@@ -9,10 +9,19 @@ function showTodoController(todoService){
     self.todo = "";
     self.calendar = "";
     self.time =  "";
+    self.id = ""
+    self.remove = remove;
+    
 
-
+    
     var data = todoService.get();
     return data;
+
+
+    function remove(id){
+        alert(id);
+        // todoService.delete(id);
+    }
 
 
 

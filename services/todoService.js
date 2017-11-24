@@ -10,7 +10,8 @@ function todoService($http, $firebaseArray, $firebaseObject){
         list: [],
         objectList: {},
         add: add,
-        get: get
+        get: get,
+        remove: remove
     };
 
     init();
@@ -35,5 +36,9 @@ function todoService($http, $firebaseArray, $firebaseObject){
         Materialize.toast('Todo Created!!', 3000, 'rounded');
     }
 
+    function remove(id){
+        console.log(id);
+    }
+    
 
 }

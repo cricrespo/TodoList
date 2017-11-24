@@ -1,6 +1,7 @@
 $(document).ready(function(){
     // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
 
+    //Modal Main
     $('#modal-trigger').click(function(){
       $(".modal").modal();
       $('#modal1').modal("open");
@@ -9,8 +10,28 @@ $(document).ready(function(){
 
     $('#close-modal').click(function(){
       $('#modal1').modal("close");
-
     });
+   /////////////////
+  
+   //MODAL TODO'S
+    
+   $('#open-edit').click(function(){
+      console.log('asdasdasdas');
+      // $(".modal-edit").modal();
+      // $('#modal-edit').modal("open");
+    });
+    
+    
+    ////////////////
+
+    $('#delete').click(function(){
+      alert('asdasdasdasdas');
+    });
+
+
+
+
+
 
     $('.datepicker').pickadate({
       selectMonths: true, // Creates a dropdown to control month

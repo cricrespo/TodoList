@@ -1,5 +1,5 @@
 
-        <div class="col s12 center-align" ng-controller="showTodoController as show" > 
+        <div class="col s12 center-align container" ng-controller="showTodoController as show" > 
             <div  ng-repeat="list in show " class="repeat-todo">                                
                 <div class="content">
                     <ul>
@@ -9,7 +9,7 @@
                         <li><a href="#" class="collection-item">{{list.time ? list.time : 'There is not Time'}}</a></li>
                     </ul>
                     <div class="card-action">
-                        <a class="btn-floating  waves-effect" id="delete" ng-click="show.remove('{{list.$id}}')"><i class="material-icons" >delete</i></a>
+                        <a class="btn-floating  waves-effect delete" id="delete" ng-click="show.remove('{{list.$id}}')"><i class="material-icons" >delete</i></a>
                         <a class="btn-floating  waves-effect" id="open-edit"><i class="material-icons" >edit</i></a>
                     </div>
                 </div>                                                        

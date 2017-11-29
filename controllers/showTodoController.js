@@ -20,7 +20,7 @@ function showTodoController(todoService){
 
     function remove(id){
         alert(id);
-        // todoService.delete(id);
+        todoService.remove(id);
     }
 
 

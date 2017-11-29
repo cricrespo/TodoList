@@ -3,6 +3,7 @@ $(document).ready(function(){
 
     //Modal Main
     $('#modal-trigger').click(function(){
+      alert('asdadas');
       $(".modal").modal();
       $('#modal1').modal("open");
 
@@ -11,6 +12,7 @@ $(document).ready(function(){
     $('#close-modal').click(function(){
       $('#modal1').modal("close");
     });
+
    /////////////////
   
    //MODAL TODO'S
@@ -23,13 +25,6 @@ $(document).ready(function(){
     
     
     ////////////////
-
-    $('#delete').click(function(){
-      alert('asdasdasdasdas');
-    });
-
-
-
 
 
 

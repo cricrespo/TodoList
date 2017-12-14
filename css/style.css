@@ -14,6 +14,13 @@ html, body {width: 100%; height: 100%; margin: 0; padding: 0;}
 /* .collection .collection-item {height: 80px;} */
 .collection{padding: 20px;}
 
+/*Form*/
+input.ng-invalid {
+    background-color: pink;
+}
+input.ng-valid {
+    background-color: lightgreen;
+}
 
 /*TODO'S*/
 .container{max-width: 100%; width:80%; margin:0 auto;}

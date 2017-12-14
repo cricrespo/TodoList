@@ -3,7 +3,6 @@ $(document).ready(function(){
 
     //Modal Main
     $('#modal-trigger').click(function(){
-      alert('asdadas');
       $(".modal").modal();
       $('#modal1').modal("open");
 

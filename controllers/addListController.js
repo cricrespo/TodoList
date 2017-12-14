@@ -14,6 +14,7 @@ console.log('controller');
         self.calendar = "";
         self.time =  "";
         self.update = update;
+        self.remove = remove;
 
 
     function update(){
@@ -27,6 +28,10 @@ console.log('controller');
     
         todoService.add(newTodo);
         console.log(todoService.list);
+    }
+
+    function remove(id){
+        console.log(id);
     }
 
 

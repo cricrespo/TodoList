@@ -30,8 +30,7 @@ function todoService($http, $firebaseArray, $firebaseObject){
     }
     
 
-    function add(todObject){
-        
+    function add(todObject){        
         todo.list.$add(todObject);
         Materialize.toast('Todo Created!!', 3000, 'rounded');
     }

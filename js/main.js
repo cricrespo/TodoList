@@ -9,7 +9,9 @@ $(document).ready(function(){
     });
 
     $('#close-modal').click(function(){
-      $('#modal1').modal("close");
+      // if ($('title') || $('todo') ){
+      //   $('#modal1').modal("close");
+      // }
     });
 
    /////////////////
